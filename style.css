@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Big Shoulders Display', cursive; 
+}
+.artBox {
+    position: relative;
+}
+.modernArt {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.modernArt img {
+    width: 80%;
+    height: 800px;  
+}
+.mobileAvatar {
+    display: none;
+}
+.blackBox {
+    background: #151515;
+    width: 800px;
+    height: 800px;
+}
+.artDescription {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 190px;
+}
+.title {
+    font-size: 96px;
+    width: 514px;
+    line-height: 88px;
+    font-weight: 900;
+    color: white;
+    mix-blend-mode: difference;
+}
+.title span {
+    display: block;
+}
+.text {
+    margin-bottom: 65px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    width: 350px;
+    color: #444444;
+}
+.buttons {
+    display: inline-flex ;
+    align-items: center;
+    margin-bottom: 120px;
+    background: #151515;
+    margin-right: 120px;
+}
+.link {  
+    padding: 24px 32px;
+    color: white;
+    cursor: pointer;
+}
+.arrow {
+    background: #D5966C;
+    padding: 19px 32px;
+    fill: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.button-area:hover .link {
+    background-color: #D5966C;
+    transition: ease-out 0.5s;
+}
+.button-area:hover .arrow{
+    background-color: #151515;
+    transition: ease-out 0.5s;
+}   
+.description {
+    margin-top: 360px;
+    padding: 0 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description div {
+    margin-right: 120px;
+}
+.description h2 {
+    margin-bottom: 30px;
+    color: #151515;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 66px;
+    width: 345px;
+}
+.description p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    color: #444444;
+    width: 350px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.miniBlackBox {
+    background: #151515;
+    padding: 48px 24px;
+    color: white;
+    margin-top: 30px;
+    height: 375px;
+}
+.miniBlackBox h3 {
+    margin-bottom: 24px;
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 900;
+}
+.miniBlackBox span {
+    display: block;
+}
+.miniBlackBox p {
+    font-family: 'Outfit', sans-serif;
+    width: 265px;
+    font-family: none;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: white;
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 180px;
+    background: #151515;
+    color: white;
+    padding: 50px 0;
+}
+.footerContainer h4 {
+    font-size: 26px;
+}
+.footerContainer p {
+    width: 350px;
+}
+.instagramSvg {
+    margin: 0 30px;
+}
+
+@media (max-width: 1200px) {
+    .blackBox {
+        display: none;
+    }
+    .modernArt img {
+        width: 100%;
+    }
+    .artDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .artboxgalery {
+        margin-top: 48px;
+    }
+    .title {
+        color: #151515;
+        mix-blend-mode: normal;
+        font-size: 70px;
+    }
+    .text {
+        font-size: 18px;
+        margin-bottom: 48px;
+    }
+    .artboxgalery {
+        margin: 48px  160px 0 0;
+    }
+    .description {
+        margin: 140px 40px 0 40px;
+    }
+    .description h2 {
+        font-size: 50px;
+        width: 220px;
+    }
+    .description div {
+        margin-right: 0;
+    }
+    .description img {
+        width: 100%;
+        height: 330px;
+    }
+    .content {
+        width: 100%;
+        gap: 0px;
+        margin-top: 10px;
+    }
+    .conten img {
+        max-width: 100%;
+    }
+    .imgGrid2 {
+        width: 100%;
+        max-width: 430px;
+        margin-right: 10px;
+    }
+    .imgGrid3 {
+        width: 100%;
+        max-width: 400px;
+    }
+    .miniBlackBox {
+        margin-top: 10px;
+    }
+    .footerContainer {
+        padding: 56px 0;
+    }
+}
+@media (max-width: 768px) {
+    .mobileAvatar {
+        display: block;
+        width: 100%;
+    }
+    .desktopAvatar {
+        display: none;
+    }
+    .artDescription {
+        padding-top: 32px;
+        align-items: center;
+    }
+    .description {
+        margin: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    .description img {
+        max-width: 343px;
+    }
+    .description h2 {
+        margin: 25px 0;
+    }
+    .title {
+        width: 357px;
+    }
+    .text {
+        margin: 32px 0;
+    }
+    .artboxgalery {
+        margin: 0;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .imgGrid3 {
+        margin: 16px 0;
+    }
+    .footerContainer {
+        flex-direction: column;
+        padding: 48px 32px;
+    }
+    .footerContainer p {
+        width: 277px;
+        margin: 38px 0;
+    }
+}

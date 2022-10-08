@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive; 
+}
+.buttons {
+    position: absolute;
+    left: 156px;
+    top: 10px;
+    display: inline-flex ;
+    align-items: center;
+    margin-bottom: 120px;
+    background: #151515;
+    margin-right: 120px;
+}
+.link {  
+    padding: 24px 32px;
+    color: white;
+    cursor: pointer;
+}
+.arrow {
+    background: #D5966C;
+    padding: 19px 32px;
+    fill: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.button-area:hover .link {
+    background-color: #D5966C;
+    transition: ease-out 0.5s;
+}
+.button-area:hover .arrow{
+    background-color: #151515;
+    transition: ease-out 0.5s;
+}  
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #151515;
+    height: 548px;
+}
+.container h1 {    
+    width: 28%;
+    font-size: 70px;
+    color: white;
+    font-weight: 900;
+}
+.container h5 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #D5966C;
+}
+.location {
+    margin: 24px 0;
+    width: 200px;
+    color: white;
+}
+.location span {
+    display: block;
+}
+.description {
+    width: 400px;
+    color: white;
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background: #D5966C;
+    color: white;
+    padding: 50px 0;
+}
+.footerContainer h4 {
+    font-size: 26px;
+}
+.footerContainer p {
+    width: 350px;
+}
+.instagramSvg {
+    margin: 0 30px;
+}
+@media (max-width: 1200px) {
+    .container {
+        justify-content: space-between;
+        padding: 0 38px;
+    }
+    .container h1 {    
+        width: 28%;
+        font-size: 50px;
+        color: white;
+        font-weight: 900;
+    }
+    .container h5 {
+        font-size: 32px;
+        font-weight: 900;
+        color: #D5966C;
+    }
+    .footerContainer h4 {
+        font-size: 24px;
+        width: 166px;
+    }
+}
+@media (max-width: 768px) {
+    .buttons {
+        left: 1%;
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container h1 {
+        width: 343px;
+        margin-bottom: 48px;
+    }
+    .description {
+        width: 343px;
+    }
+    .footerContainer {
+        flex-direction: column;
+        padding: 48px 32px;
+    }
+    .footerContainer p {
+        width: 277px;
+        margin: 38px 0;
+    }
+}
